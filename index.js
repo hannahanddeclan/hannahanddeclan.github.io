@@ -4,6 +4,7 @@ const setError = (errorString) => {
     const errorNode = document.getElementById('error-message')
     errorNode.innerHTML = errorString
     errorNode.style.visibility = 'visible';
+    document.getElementById('password-input').value = ''
 }
 
 const verifyPassword = (event) => {
