@@ -1,0 +1,81 @@
+Body {
+    background-image: url(https://scontent.fman2-1.fna.fbcdn.net/v/t1.0-9/118442374_3845926495422520_3250489779740458979_o.jpg?_nc_cat=102&_nc_sid=730e14&_nc_ohc=UmFSRUwTRK4AX_xjemE&_nc_ht=scontent.fman2-1.fna&oh=a90e0f42e6057e83e99bd731d7d6aab1&oe=5F93AF31);
+    background-size: cover;
+    font-family: Palatino Linotype;
+    width: 100vw;
+    font-size: x-large;
+}
+
+#login-container {
+    margin-left: 25%;
+    margin-top: 5%;
+    width: 40%;
+    padding: 2%;
+}
+
+#error-message {
+    visibility: hidden;
+    text-align: center;
+    background-color: #A93226;
+    color: white;
+    width: 70%;
+    margin-left: 15%;
+    opacity: 80%;
+    border: 3px solid #641E16;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+#password-input {
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px; 
+    border: 0px;
+    padding: 3% 5%;
+    opacity: 75%;
+    font-size: xx-large;
+}
+
+#password-input::placeholder {
+    color: darkgrey;
+}
+
+#password-input:hover {
+    opacity: 90%;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.4), 0 7px 21px 0 rgba(0, 0, 0, 0.39);
+}
+
+#password-input:focus {
+    opacity: 90%;
+    outline-width: 0;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.4), 0 7px 21px 0 rgba(0, 0, 0, 0.39);
+}
+
+#password-input:focus::placeholder {
+    color: gray;
+}
+
+.button {
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 45%;
+    width: 20%;
+    padding: 2%;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: lightsalmon;
+    color: white;
+    font-size: xx-large;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: salmon;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.4), 0 7px 21px 0 rgba(0, 0, 0, 0.39);
+}
+
+.button:focus {
+    outline-width: 0;
+}
