@@ -16,6 +16,6 @@ const verifyPassword = (event) => {
       setError('Incorrect password')
     } else {
       sessionStorage.setItem('loggedIn', true)
-      window.location.href = 'pages/homepage'
+      window.location.href = 'homepage'
     }
   }
