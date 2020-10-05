@@ -9,7 +9,6 @@ const setError = (errorString) => {
 
 const verifyPassword = (event) => {
     const password = document.getElementById('password-input').value
-    console.log(password)
     if (password.length == 0) {
       setError('enter a password')
     } else if (password != thing) {
