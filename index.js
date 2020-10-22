@@ -1,10 +1,10 @@
-const thing = 'HandDwedding2021';
+const thing = 'hibndib14';
 
 const setError = (errorString) => {
     const errorNode = document.getElementById('error-message')
     errorNode.innerHTML = errorString
     errorNode.style.visibility = 'visible';
-    document.getElementById('password-input').value = ''
+    document.getElementById('password-input').focus()
 }
 
 const verifyPassword = (event) => {

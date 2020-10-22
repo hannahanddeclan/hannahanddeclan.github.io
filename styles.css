@@ -1,6 +1,5 @@
 Body {
-    background-image: url(https://scontent.fman2-1.fna.fbcdn.net/v/t1.0-9/118442374_3845926495422520_3250489779740458979_o.jpg?_nc_cat=102&_nc_sid=730e14&_nc_ohc=UmFSRUwTRK4AX_xjemE&_nc_ht=scontent.fman2-1.fna&oh=a90e0f42e6057e83e99bd731d7d6aab1&oe=5F93AF31);
-    background-size: cover;
+    background-color: mistyrose;
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     font-size: x-large;
@@ -10,6 +9,100 @@ Body {
     align-items: center;
     margin: 0px;
 }
+
+.home-container {
+    width: 80%;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
+
+.header a {
+    color: lightslategray;
+    text-decoration: none;
+    margin: 0px 3%;
+    font-size: xx-large;
+}
+
+.header a:hover {
+    color: darksalmon;
+    cursor: pointer;
+}
+
+.name {
+    margin-top: 1%;
+    font-size: 600%;
+    vertical-align: center;
+    text-align: center;
+    color: #a84a4a;
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+.name #getting-married {
+    margin-top: -5%;
+    font-size: 30%;
+}
+
+#countdown {
+    visibility: hidden;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 7%;
+}
+
+#countdown #date {
+    font-size: 250%;
+    font-family: 'Amatic SC', cursive;
+    color: #a84a4a;
+} 
+
+#countdown-timer {
+    margin: auto;
+}
+
+#countdown-timer div {
+    display: inline-block;
+}
+
+.countdown-box {
+    font-size: 200%;
+    padding: 5px 20px 0px 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: grey;
+    font-family: 'Coming Soon', cursive;
+}
+
+.countdown-labels {
+    width: 100%;
+    color: darksalmon;
+    font-size: large;
+    font-family: 'Coming Soon', cursive;
+}
+
+#days {
+    margin-left: 9%;
+    margin-right: 18%;
+}
+#hours {
+    margin-left: 10%;
+    margin-right: 11%;
+}
+#minutes {
+    margin-left: 11%;
+}
+
 
 .page-container {
     background-color: white;

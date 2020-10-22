@@ -4,10 +4,87 @@
     <title>Hannah and Declan's Wedding</title>
     <link rel="icon" href="/calendar_icon.png">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class='page-container'>
-      
+    <div class='header'>
+      <a href='homepage'>home</a>
+      <a href='location'>location</a>
+      <a href='accommodation'>accommodation</a>
+      <a href='details'>other details</a>
     </div>
+    <div class='home-container'>
+      <div class='name'>
+        <div id='name'>Hannah & Declan</div>
+        <div id='getting-married'>are getting married!</div>
+      </div>
+      <div id='countdown'>
+        <div id='countdown-timer'>
+          <div id='countdown-days'></div>
+          <div>:</div>
+          <div id='countdown-hours'></div>
+          <div>:</div>
+          <div id='countdown-minutes'></div>
+        </div>
+        <div class='countdown-labels'>
+          <span id='days'>days</span>
+          <span id='hours'>hours</span>
+          <span id='minutes'>minutes</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      var date = new Date("August 5, 2021 11:30:00").getTime();
+      var createCountdownBox = function(number, parentId) {
+        var node = document.createElement("div");
+        node.classList.add('countdown-box')
+        var textnode = document.createTextNode(number);
+        node.appendChild(textnode);
+        document.getElementById(parentId).appendChild(node)
+      }
+      var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = date - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        days = days.toString();
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        hours = hours.toString();
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        minutes = minutes.toString();
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown-timer").innerHTML = "Wedding time!";
+          return
+        }
+        document.getElementById('countdown-days').innerHTML = ''
+        document.getElementById('countdown-hours').innerHTML = ''
+        document.getElementById('countdown-minutes').innerHTML = ''
+        if (days.length == 2) {
+          days = '0'+days
+        } else if (days.length == 1) {
+          days = '00'+days
+        }
+        var i;
+        for (i=0; i < days.length; i++) {
+          createCountdownBox(days[i], 'countdown-days')
+        }
+        if (hours.length == 1) {
+          hours = '0'+hours
+        }
+        for (i=0; i < hours.length; i++) {
+          createCountdownBox(hours[i], 'countdown-hours')
+        }
+        if (minutes.length == 1) {
+          minutes = '0'+minutes
+        }
+        for (i=0; i < minutes.length; i++) {
+          createCountdownBox(minutes[i], 'countdown-minutes')
+        }
+        document.getElementById('countdown').style.visibility = 'visible';
+      }, 1000);
+    </script>
   </body>
 </html>
