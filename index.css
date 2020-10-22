@@ -1,23 +1,20 @@
 Body {
-    background-image: url(https://scontent.fman2-1.fna.fbcdn.net/v/t1.0-9/118442374_3845926495422520_3250489779740458979_o.jpg?_nc_cat=102&_nc_sid=730e14&_nc_ohc=UmFSRUwTRK4AX_xjemE&_nc_ht=scontent.fman2-1.fna&oh=a90e0f42e6057e83e99bd731d7d6aab1&oe=5F93AF31);
-    background-repeat: no-repeat;
-    background-size: 100vw auto;
+    background: url(https://scontent.fman2-1.fna.fbcdn.net/v/t1.0-9/118442374_3845926495422520_3250489779740458979_o.jpg?_nc_cat=102&_nc_sid=730e14&_nc_ohc=UmFSRUwTRK4AX_xjemE&_nc_ht=scontent.fman2-1.fna&oh=a90e0f42e6057e83e99bd731d7d6aab1&oe=5F93AF31) no-repeat center center fixed;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
     font-size: x-large;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px;
 }
 
-@media only screen and (max-width: 768px) {
-    Body {
-        background-size: auto 100vh;
-        background-position-x: center;
-    }
+#container {
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
+
 
 #login-container {
     margin: auto;

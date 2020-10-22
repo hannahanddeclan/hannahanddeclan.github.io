@@ -63,12 +63,6 @@ Body {
     margin-top: 7%;
 }
 
-#countdown #date {
-    font-size: 250%;
-    font-family: 'Amatic SC', cursive;
-    color: #a84a4a;
-} 
-
 #countdown-timer {
     margin: auto;
 }
@@ -106,7 +100,6 @@ Body {
 #minutes {
     margin-left: 11%;
 }
-
 
 .page-container {
     background-color: white;
