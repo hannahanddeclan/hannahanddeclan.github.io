@@ -1,4 +1,4 @@
-const thing = 'hibndib14';
+const thing = 'HandDwedding2021';
 
 const setError = (errorString) => {
     const errorNode = document.getElementById('error-message')
