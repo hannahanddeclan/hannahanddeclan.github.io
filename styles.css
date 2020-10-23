@@ -109,3 +109,18 @@ Body {
     min-height: 100vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.content-container {
+    padding: 10%;
+    font-size: large;
+    font-family: 'Coming Soon', cursive;
+}
+
+.content-container h1 {
+    margin-top: 5%;
+    color: darksalmon;
+}
+
+.content-container li {
+    list-style-type: none;
+}
