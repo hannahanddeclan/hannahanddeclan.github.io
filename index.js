@@ -18,3 +18,12 @@ const verifyPassword = (event) => {
       window.location.href = 'homepage'
     }
   }
+
+window.onload = function () {
+  document.getElementById('password-input').addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      verifyPassword(event)
+    }
+  })
+}

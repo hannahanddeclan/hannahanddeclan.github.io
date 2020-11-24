@@ -5,21 +5,366 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="/calendar_icon.png">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class='header'>
-      <a href='homepage'>home</a>
-      <a href='location'>location</a>
-      <a href='accommodation'>accommodation</a>
-      <a href='details'>other details</a>
+      <a href='homepage'>Home</a>
+      <a href='location'>Location</a>
+      <a href='accommodation'>Accommodation</a>
+      <a href='details'>Other Details</a>
     </div>
     <div class='page-container'>
       <div class='content-container'>
-        <p>We are currently in the process of getting a list of accommodation options so please keep an eye on this page for updates!</p>
-        <p>If you have any specific accommodation questions please just pop us a message.</p>
+        <div>
+          In the below sections are some accommodation options we are aware of in the Cockermouth and Keswick area. This definitely isn't an exhaustive list, so there may be better options elsewhere.
+          All the travel times are by car using the Google maps travel time estimation.
+          The accommodation options in each section are ordered by travel time to the reception venue!
+        </div>
+        <div id='hotel-options'>
+          <div id='hotel-options-header'>Hotels and B&Bs</div>
+          <div class='accom-details'>
+            For the following hotels we have included the link and prices for a double room for one night on Thursday 5th August from their website, but you may be able to find cheaper prices from sites like booking.com.
+            There will also be plenty of B&Bs in the area.
+          </div>
+          <div class='accom-options'>
+            <div class='accom-container highlight'>
+              <h1>Armathwaite Hall</h1>
+              <p>
+                This is the hotel where the reception will take place, so travel after the event will not be needed and the hotel bar remains open for any hotel guests who want to continue after midnight!
+                Unfortunately, due to a wedding the day after ours and rooms needed for our immediate wedding party, all the club rooms are booked, so only more expensive rooms are available.
+              </p>
+              <p>Travel time to the church: 16mins</p>
+              <p>Travel time to the reception venue: 0mins</p>
+              <p>Price per night: £360</p>
+              <a href="https://www.armathwaite-hall.com/">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Castle Inn Hotel</h1>
+              <p>Travel time to the church: 15mins</p>
+              <p>Travel time to the reception venue: 3mins (or 15minute walk)</p>
+              <p>Price per night: £130</p>
+              <a href="http://www.castleinncumbria.co.uk/">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>The Pheasant</h1>
+              <p>Travel time to the church: 14mins</p>
+              <p>Travel time to the reception venue: 6mins</p>
+              <p>Price per night: £135</p>
+              <a href="https://www.inncollectiongroup.com/the-pheasant-bassenthwaite/">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Travelodge Cockermouth</h1>
+              <p>Travel time to the church: 8mins</p>
+              <p>Travel time to the reception venue: 12mins</p>
+              <p>Price per night: £90</p>
+              <a href="https://www.travelodge.co.uk/hotels/350/Cockermouth-hotel">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Allerdale Court Hotel</h1>
+              <p>Travel time to the church: 7mins</p>
+              <p>Travel time to the reception venue: 13mins</p>
+              <p>Price per night: £95</p>
+              <a href="https://allerdalecourthotel.co.uk/">Visit website</a>
+            </div>
+          </div>
+        </div>
+        <div id='cottage-options'>
+          <div id='cottage-options-header'>Self-Catering Options</div>
+          <div class='accom-details'>
+            All of the self-catering options we have found are for week-long stays starting on Friday 30th July or Saturday 31st July. There will be shorter stays available elsewhere, we just haven't researched those.
+            Aside from Tallentire Hall, the options are all from the Sally's Cottages company.
+            There are multiple other companies doing holiday cottage rental options, including 'Cumbrian', 'Lake Lovers', 'Sykes Cottages' and 'Airbnb'; however, we know Sally's is trustworthy and we're hoping to get a discount on their properties so we've only researched theirs.
+            If you want to book any of the self-catering options let us know and we'll ask about a discount for you!
+          </div>
+          <div class='accom-options'>
+            <div class='accom-container'>
+              <h1>Herdwick Croft</h1>
+              <p>Sleeps: 8/12</p>
+              <p>Number of rooms: 4</p>
+              <p>Changeover day: Friday</p>
+              <p>Travel time to the church: 15mins</p>
+              <p>Travel time to the reception venue: 2mins (or 5minute walk)</p>
+              <p>Price: £1555</p>
+              <a href="https://www.sallyscottages.co.uk/herdwick-croft">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Sale View</h1>
+              <p>Sleeps: 3/4</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Friday</p>
+              <p>Travel time to the church: 14mins</p>
+              <p>Travel time to the reception venue: 4mins</p>
+              <p>Price: £510</p>
+              <a href="https://www.sallyscottages.co.uk/sale-view">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Lakeside Lodge</h1>
+              <p>Sleeps: 2</p>
+              <p>Number of rooms: 1</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 14mins</p>
+              <p>Travel time to the reception venue: 4mins</p>
+              <p>Price: £655</p>
+              <a href="https://www.sallyscottages.co.uk/lakeside-lodge">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Meadowside Cottage</h1>
+              <p>Sleeps: 4</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Friday</p>
+              <p>Travel time to the church: 14mins</p>
+              <p>Travel time to the reception venue: 4mins</p>
+              <p>Price: £720</p>
+              <a href="https://www.sallyscottages.co.uk/meadowside-cottage">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Chapel House Mews</h1>
+              <p>Sleeps: 2/3</p>
+              <p>Number of rooms: 1</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 17mins</p>
+              <p>Travel time to the reception venue: 5mins</p>
+              <p>Price: £500</p>
+              <a href="https://www.sallyscottages.co.uk/chapel-house-mews">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Barn Cottage</h1>
+              <p>Sleeps: 4</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 18mins</p>
+              <p>Travel time to the reception venue: 6mins</p>
+              <p>Price: £620</p>
+              <a href="https://www.sallyscottages.co.uk/barn-cottage">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Parkergate Farmhouse</h1>
+              <p>Sleeps: 8/10</p>
+              <p>Number of rooms: 4</p>
+              <p>Changeover day: Friday</p>
+              <p>Travel time to the church: 18mins</p>
+              <p>Travel time to the reception venue: 6mins</p>
+              <p>Price: £2090</p>
+              <a href="https://www.sallyscottages.co.uk/parkergate-farmhouse">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Broadness Cottage</h1>
+              <p>Sleeps: 7</p>
+              <p>Number of rooms: 3</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 24mins</p>
+              <p>Travel time to the reception venue: 8mins</p>
+              <p>Price: £600</p>
+              <a href="https://www.sallyscottages.co.uk/broadness-cottage">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Park View</h1>
+              <p>Sleeps: 8</p>
+              <p>Number of rooms: 4</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 8mins</p>
+              <p>Travel time to the reception venue: 8mins</p>
+              <p>Price: £1055</p>
+              <a href="https://www.sallyscottages.co.uk/park-view">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Hall Garth</h1>
+              <p>Sleeps: 8</p>
+              <p>Number of rooms: 4</p>
+              <p>Changeover day: Friday</p>
+              <p>Travel time to the church: 20mins</p>
+              <p>Travel time to the reception venue: 12mins</p>
+              <p>Price: £2025</p>
+              <a href="https://www.sallyscottages.co.uk/hall-garth-farm">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>37 Kirkgate</h1>
+              <p>Sleeps: 5</p>
+              <p>Number of rooms: 3</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 7mins</p>
+              <p>Travel time to the reception venue: 13mins</p>
+              <p>Price: £480</p>
+              <a href="https://www.sallyscottages.co.uk/37-kirkgate">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>7 Harney Peak</h1>
+              <p>Sleeps: 2</p>
+              <p>Number of rooms: 1</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 23mins</p>
+              <p>Travel time to the reception venue: 13mins</p>
+              <p>Price: £675</p>
+              <a href="https://www.sallyscottages.co.uk/7-harney-peak">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Highbridge Cottage</h1>
+              <p>Sleeps: 4</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 20mins</p>
+              <p>Travel time to the reception venue: 13mins</p>
+              <p>Price: £725</p>
+              <a href="https://www.sallyscottages.co.uk/highbridge-cottage-braithwaite">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>High Bridge</h1>
+              <p>Sleeps: 5/6</p>
+              <p>Number of rooms: 3</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 20mins</p>
+              <p>Travel time to the reception venue: 13mins</p>
+              <p>Price: £820</p>
+              <a href="https://www.sallyscottages.co.uk/high-bridge">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Scar Cottage</h1>
+              <p>Sleeps: 8</p>
+              <p>Number of rooms: 4</p>
+              <p>Changeover day: Friday</p>
+              <p>Travel time to the church: 23mins</p>
+              <p>Travel time to the reception venue: 13mins</p>
+              <p>Price: £1360</p>
+              <a href="https://www.sallyscottages.co.uk/scar-cottage">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Challoner Cottage</h1>
+              <p>Sleeps: 4</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 8mins</p>
+              <p>Travel time to the reception venue: 14mins</p>
+              <p>Price: £515</p>
+              <a href="https://www.sallyscottages.co.uk/challoner-cottage">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Derwent Cottage Mews</h1>
+              <p>Sleeps: 2</p>
+              <p>Number of rooms: 1</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 18mins</p>
+              <p>Travel time to the reception venue: 14mins</p>
+              <p>Price: £570</p>
+              <a href="https://www.sallyscottages.co.uk/derwent-cottage-mews">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Lower House</h1>
+              <p>Sleeps: 4</p>
+              <p>Number of rooms: 3</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 25mins</p>
+              <p>Travel time to the reception venue: 14mins</p>
+              <p>Price: £795</p>
+              <a href="https://www.sallyscottages.co.uk/lower-house-lords-seat">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>The Shieling</h1>
+              <p>Sleeps: 2</p>
+              <p>Number of rooms: 1</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 21mins</p>
+              <p>Travel time to the reception venue: 16mins</p>
+              <p>Price: £545</p>
+              <a href="https://www.sallyscottages.co.uk/shieling">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Ellwood</h1>
+              <p>Sleeps: 8</p>
+              <p>Number of rooms: 4</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 1mins (or 8minute walk)</p>
+              <p>Travel time to the reception venue: 16mins</p>
+              <p>Price: £1605</p>
+              <a href="https://www.sallyscottages.co.uk/ellwood">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Cobbler's Cottage</h1>
+              <p>Sleeps: 4</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 16mins</p>
+              <p>Travel time to the reception venue: 17mins</p>
+              <p>Price: £545</p>
+              <a href="https://www.sallyscottages.co.uk/cobblers-cottage">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>The Retreat</h1>
+              <p>Sleeps: 6</p>
+              <p>Number of rooms: 3</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 14mins</p>
+              <p>Travel time to the reception venue: 17mins</p>
+              <p>Price: £840</p>
+              <a href="https://www.sallyscottages.co.uk/retreat-cockermouth">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Brewery House</h1>
+              <p>Sleeps: 7</p>
+              <p>Number of rooms: 4</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 16mins</p>
+              <p>Travel time to the reception venue: 17mins</p>
+              <p>Price: £1420</p>
+              <a href="https://www.sallyscottages.co.uk/brewery-house-loweswater">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>14 Manesty View</h1>
+              <p>Sleeps: 4</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 26mins</p>
+              <p>Travel time to the reception venue: 18mins</p>
+              <p>Price: £655</p>
+              <a href="https://www.sallyscottages.co.uk/14-manesty-view">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Rose Cottage</h1>
+              <p>Sleeps: 3</p>
+              <p>Number of rooms: 2</p>
+              <p>Changeover day: Saturday</p>
+              <p>Travel time to the church: 25mins</p>
+              <p>Travel time to the reception venue: 18mins</p>
+              <p>Price: £670</p>
+              <a href="https://www.sallyscottages.co.uk/rose-cottage-keswick">Visit website</a>
+            </div>
+            <div class='accom-container'>
+              <h1>Tallentire Hall</h1>
+              <p>
+                Tallentire Hall is a renovation-in-progress owned by some family friends which currently has two self-catering cottages for holiday rental.
+                If both cottages are booked, you'd basically have the place to yourselves, but otherwise may end up sharing the outside space with people booking the second cottage.
+              </p>
+              <p>Travel time to the church: 4mins</p>
+              <p>Travel time to the reception venue: 20mins</p>
+              <div>
+                <p>Gamekeeper's cottage</p>
+                <p>Sleeps: 5</p>
+                <p>Number of rooms: 3</p>
+                <p>Changeover day: Friday</p>
+                <p>Price: £909</p>
+                <a href="https://tallentirehall.com/listings/gamekeepers-cottage/">Visit website</a>
+              </div>
+              <div>
+                <p>Gardener's cottage</p>
+                <p>Sleeps: 2</p>
+                <p>Number of rooms: 1</p>
+                <p>Changeover day: Friday</p>
+                <p>Price: £539</p>
+                <a href="https://tallentirehall.com/listings/gardeners-cottage/">Visit website</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class='footer'>
+      <a href='homepage'><i class="material-icons">home</i></a>
+      <a href='location'><i class="material-icons">place</i></a>
+      <a href='accommodation'><i class="material-icons">king_bed</i></a>
+      <a href='details'><i class="material-icons">help_center</i></a>
     </div>
   </body>
 </html>
