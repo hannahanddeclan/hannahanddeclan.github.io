@@ -43,12 +43,18 @@ Body {
 }
 
 .page-container {
-    width: 55%;
+    width: 70%;
     margin: 0px auto;
     min-height: calc(90% - 80px);
     text-align: center;
     padding: 5%;
     padding-top: 80px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80%;
+    padding-bottom: 30px;
+}
+.content-container {
+    padding-bottom: 30px;
 }
 
 .footer {
@@ -76,6 +82,122 @@ Body {
     font-size: 300%;
 }
 
+.options-header {
+    text-align: left;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    font-size: 200%;
+    font-family: 'Fredericka the Great', cursive;
+    background-color: rosybrown;
+    color: white;
+    margin-top: 30px;
+    position: relative;
+}
+
+.options-header:hover {
+    cursor: pointer;
+    background-color: #9f6060;
+}
+
+.accom-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10px 0px;
+}
+
+.accom-container {
+    margin: 10px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 65%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+.accom-container.highlight {
+    background-color: rosybrown;
+    color: white;
+}
+
+.accom-container.highlight h1 {
+    color: white;
+}
+
+.accom-container .accom-container {
+    font-size: 100%;
+}
+
+.accom-container:hover:not(#tallentire) {
+    background-color: rosybrown;
+    color: white;
+    cursor: pointer;
+}
+
+.accom-container.highlight:hover {
+    background-color: #9f6060 !important;
+}
+
+.accom-container h1, .accom-container h2 {
+    font-family: 'Petit Formal Script', cursive;
+    color: #9f6060;
+    margin-bottom: 3%;
+}
+
+.accom-container h2 {
+    margin-bottom: 10%;
+}
+
+.accom-container:hover:not(#tallentire) h1, .accom-container:hover:not(#tallentire) h2 {
+    color: white;
+}
+
+.accom-container p, .accom-container a {
+    text-align: left;
+    line-height: 50%;
+}
+
+.accom-container .divided {
+    border-top: 1px solid rosybrown;
+    margin-top: 5%;
+    padding: 3%;
+}
+
+.accom-container.highlight .divided {
+    border-top: 1px solid white;
+}
+
+.accom-container:hover:not(#tallentire) .divided {
+    border-top: 1px solid white;
+}
+
+#cottage-options-body, #hotel-options-body {
+    display: None;
+}
+
+.options-body {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    padding: 5%;
+    width: 86%;
+    margin: 0px 2%;
+}
+
+.header-expander {
+    position: absolute;
+    right: 20px;
+    vertical-align: middle;
+}
+
+.label {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
     .header {
         visibility: hidden;
@@ -87,8 +209,34 @@ Body {
         width: 90%;
         padding-top: 5%;
         height: 90%;
+        font-size: 50%;
+    }
+    .content-container {
+        padding-bottom: 90px;
     }
     #name {
         font-size: 150%;
+    }
+    #hotel-options, #cottage-options {
+        width: 100vw;
+        margin-left: -5%;
+    }
+    .options-header {
+        border-radius: 0px;
+    }
+    .options-body {
+        width: auto;
+        box-shadow: none;
+    }
+    .accom-options {
+        display: block;
+    }
+    a {
+        text-decoration: none;
+    }
+    .accom-container {
+        display: block;
+        box-shadow: none;
+        border-top: 1px solid rosybrown;
     }
 }

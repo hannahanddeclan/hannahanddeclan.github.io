@@ -8,16 +8,16 @@ const setError = (errorString) => {
 }
 
 const verifyPassword = (event) => {
-    const password = document.getElementById('password-input').value
-    if (password.length == 0) {
-      setError('enter a password')
-    } else if (password != thing) {
-      setError('password is incorrect')
-    } else {
-      sessionStorage.setItem('loggedIn', true)
-      window.location.href = 'homepage'
-    }
+  const password = document.getElementById('password-input').value
+  if (password.length == 0) {
+    setError('enter a password')
+  } else if (password != thing) {
+    setError('password is incorrect')
+  } else {
+    sessionStorage.setItem('loggedIn', true)
+    window.location.href = 'homepage'
   }
+}
 
 window.onload = function () {
   document.getElementById('password-input').addEventListener("keyup", function(event) {
