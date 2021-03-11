@@ -208,6 +208,8 @@ Body {
 .message {
     padding: 5px;
     border: 2px solid #9f6060;
+    border-radius: 5px;
+    margin-top: 5%;
 }
 
 @media only screen and (max-width: 600px) {
