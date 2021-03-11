@@ -198,6 +198,11 @@ Body {
     font-weight: bold;
 }
 
+.message {
+    padding: 5px;
+    border: 2px solid #9f6060;
+}
+
 @media only screen and (max-width: 600px) {
     .header {
         visibility: hidden;
