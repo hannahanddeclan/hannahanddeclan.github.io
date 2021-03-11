@@ -205,6 +205,7 @@ Body {
 }
 
 .annoucements-header {
+    margin-top: 0;
     padding: 3px;
     background-color: #9f6060;
     color: white;
