@@ -198,6 +198,13 @@ Body {
     font-weight: bold;
 }
 
+.annoucements {
+    background-colour: #9f6060;
+    color: white;
+    font-family: 'Petit Formal Script', cursive;
+    padding: 3px;
+}
+
 .message {
     padding: 5px;
     border: 2px solid #9f6060;
