@@ -53,6 +53,15 @@ Body {
     padding-bottom: 30px;
     overflow: scroll;
 }
+
+.page_container::-webkit-scrollbar {
+  display: none;
+}
+.page_container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .content-container {
     padding-bottom: 30px;
 }
